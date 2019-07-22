@@ -2216,18 +2216,30 @@ input, select, textarea {
 
 /* Icon */
 	.logo-new {
-		background: #DE7784;
-		border-radius: 100%;
-		color: #ffffff;
-		cursor: default;
-		display: inline-block;
-		font-size: 2.25em;
-		height: 2.35em;
-		line-height: 2.35em;
-		margin: 0 0 0.75em 0;
-		text-align: center;
-		width: 2.35em;
+		width: 100px;
+		height: auto;
 	}
+
+	/* tabletas */
+	@media (min-width: 768px) {
+		.logo-new {
+			width: 150px;
+		}
+	}
+
+	/* escritorio normales */
+	@media (min-width: 992px) {
+		.logo-new {
+			width: 150px;
+		}
+	} 
+
+	/* pantallas grandes */
+	@media (min-width: 1200px) {
+		.logo-new {
+			width: 200px;
+		}
+	} 
 
 	.icon {
 		text-decoration: none;
